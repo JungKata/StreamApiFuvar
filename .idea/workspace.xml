@@ -64,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668460088434</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fuvar.csv beillesztese program letrehozása&#10;fuvarPerformat letrehozása&#10;- fajl konvertalasa megfelelo modon&#10;listaba helyzes&#10;konstruktor getter elkészitese">
+      <created>1668460135007</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668460135007</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
