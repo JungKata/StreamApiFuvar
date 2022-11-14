@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1bf1fa-633a-4b21-b368-d87b068a4ce9" name="Changes" comment="fuvar.csv beillesztese program letrehozása">
-      <change afterPath="$PROJECT_DIR$/src/Fuvar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FuvarPerformat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="8c1bf1fa-633a-4b21-b368-d87b068a4ce9" name="Changes" comment="fuvar.csv beillesztese program letrehozása&#10;fuvarPerformat letrehozása&#10;- fajl konvertalasa megfelelo modon&#10;listaba helyzes&#10;konstruktor getter elkészitese" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +57,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668458144446</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fuvar.csv beillesztese program letrehozása&#10;fuvarPerformat letrehozása&#10;- fajl konvertalasa megfelelo modon&#10;listaba helyzes&#10;konstruktor getter elkészitese">
+      <created>1668460088434</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668460088434</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,6 +80,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fuvar.csv beillesztese program letrehozása" />
-    <option name="LAST_COMMIT_MESSAGE" value="fuvar.csv beillesztese program letrehozása" />
+    <MESSAGE value="fuvar.csv beillesztese program letrehozása&#10;fuvarPerformat letrehozása&#10;- fajl konvertalasa megfelelo modon&#10;listaba helyzes&#10;konstruktor getter elkészitese" />
+    <option name="LAST_COMMIT_MESSAGE" value="fuvar.csv beillesztese program letrehozása&#10;fuvarPerformat letrehozása&#10;- fajl konvertalasa megfelelo modon&#10;listaba helyzes&#10;konstruktor getter elkészitese" />
   </component>
 </project>
