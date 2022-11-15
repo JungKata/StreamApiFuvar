@@ -45,6 +45,17 @@ public class FuvarPerformat {
     public String getFizetesModja() {
         return fizetesModja;
     }
+
+    @Override
+    public String toString() {
+        return "FuvarPerformat: " + "taxiAzonosito= " + taxiAzonosito +
+                                    ", indulasiIdo= " + indulasiIdo +
+                                    ", utazasiIdo= " + utazasiIdo +
+                                    ", megtettTavolsag= " + megtettTavolsag +
+                                    ", vetelDij= " + vetelDij +
+                                    ", borravalo= " + borravalo +
+                                    ", fizetesModja= " + fizetesModja;
+    }
 }
 
 
