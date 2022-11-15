@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Fuvar fuvar = new Fuvar("fuvar.csv");
+        Fuvar fuvar1 = new Fuvar("fuvar.csv");
 
     }
 }

@@ -2,9 +2,9 @@ public class FuvarPerformat {
     private int taxiAzonosito;
     private String indulasiIdo;
     private int utazasiIdo;
-    private int megtettTavolsag;
-    private int vetelDij;
-    private int borravalo;
+    private double megtettTavolsag;
+    private double vetelDij;
+    private double borravalo;
     private String fizetesModja;
 
     public FuvarPerformat(String sor) {
@@ -12,9 +12,9 @@ public class FuvarPerformat {
         this.taxiAzonosito = Integer.parseInt(s[0]);
         this.indulasiIdo = s[1];
         this.utazasiIdo = Integer.parseInt(s[2]);
-        this.megtettTavolsag = Integer.parseInt(s[3]);
-        this.vetelDij = Integer.parseInt(s[4]);
-        this.borravalo = Integer.parseInt(s[5]);
+        this.megtettTavolsag = Double.parseDouble(s[3]);
+        this.vetelDij = Double.parseDouble(s[4]);
+        this.borravalo = Double.parseDouble(s[5]);
         this.fizetesModja = s[6];
     }
 
@@ -30,15 +30,15 @@ public class FuvarPerformat {
         return utazasiIdo;
     }
 
-    public int getMegtettTavolsag() {
+    public double getMegtettTavolsag() {
         return megtettTavolsag;
     }
 
-    public int getVetelDij() {
+    public double getVetelDij() {
         return vetelDij;
     }
 
-    public int getBorravalo() {
+    public double getBorravalo() {
         return borravalo;
     }
 
