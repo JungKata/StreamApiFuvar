@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -15,6 +16,8 @@ public class Main {
             Beolvasas(fajlNev);
             UtazsokSzáma();
             TaxisoforBevetel();
+            Merfold();
+            LegHosszabbFuvar();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -32,7 +35,13 @@ public class Main {
         System.out.println("1.Feladat:\n" + "Utazások száma: " +  fuvarLista.stream().count() + "db volt");
     }
 
-    //private static void
+    private static void Merfold(){
+        System.out.println("3.Feladat: \n" + "Taxisok összesen megtett mérföldje: " + fuvarLista.stream().mapToDouble(FuvarPerformat::getMegtettTavolsag).sum() + " mérföld");
+    }
+
+    private static void LegHosszabbFuvar(){
+        System.out.println("4.Feladat: \n" + "Leghoszabb fuvar (időben) mért adatai: " + fuvarLista.stream().max(Comparator.comparing(FuvarPerformat :: getUtazasiIdo)).get());
+    }
 
     public static void Beolvasas (String fajlnev) throws IOException {
             fuvarLista = new ArrayList<>();
