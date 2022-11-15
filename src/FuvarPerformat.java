@@ -8,7 +8,7 @@ public class FuvarPerformat {
     private String fizetesModja;
 
     public FuvarPerformat(String sor) {
-        String[] s = sor.split(";");
+        String[] s = sor.replace(",", ".").split(";");
         this.taxiAzonosito = Integer.parseInt(s[0]);
         this.indulasiIdo = s[1];
         this.utazasiIdo = Integer.parseInt(s[2]);
@@ -16,6 +16,16 @@ public class FuvarPerformat {
         this.vetelDij = Double.parseDouble(s[4]);
         this.borravalo = Double.parseDouble(s[5]);
         this.fizetesModja = s[6];
+    }
+
+    public FuvarPerformat(int taxiAzonosito, String indulasiIdo, int utazasiIdo, double megtettTavolsag, double vetelDij, double borravalo, String fizetesModja) {
+        this.taxiAzonosito = taxiAzonosito;
+        this.indulasiIdo = indulasiIdo;
+        this.utazasiIdo = utazasiIdo;
+        this.megtettTavolsag = megtettTavolsag;
+        this.vetelDij = vetelDij;
+        this.borravalo = borravalo;
+        this.fizetesModja = fizetesModja;
     }
 
     public int getTaxiAzonosito() {
