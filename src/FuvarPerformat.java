@@ -56,6 +56,9 @@ public class FuvarPerformat {
         return fizetesModja;
     }
 
+    public double getBevetel(){
+        return this.borravalo + this.vetelDij;
+    }
 
     @Override
     public String toString() {

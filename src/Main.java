@@ -13,7 +13,8 @@ public class Main {
         String fajlNev = "fuvar.csv";
         try {
             Beolvasas(fajlNev);
-            System.out.println("1.Feladat:\n" + "Utazások száma: " +  fuvarLista.stream().count() + "db volt");
+            UtazsokSzáma();
+            TaxisoforBevetel();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -21,7 +22,19 @@ public class Main {
         }
     }
 
-        public static void Beolvasas (String fajlnev) throws IOException {
+    private static void TaxisoforBevetel() {
+        System.out.println("2.Feladat:\n" + "6185-ös azonosítójú taxisnak a fuvarainak száma: "
+                + fuvarLista.stream().filter(fuvarLista -> fuvarLista.getTaxiAzonosito() == 6185).count() + "db\n" +
+                " bevétele:  " + fuvarLista.stream().filter(fuvarLista -> fuvarLista.getTaxiAzonosito() == 6185).mapToDouble(FuvarPerformat::getBevetel).sum() + "$" );
+    }
+
+    private static void UtazsokSzáma() {
+        System.out.println("1.Feladat:\n" + "Utazások száma: " +  fuvarLista.stream().count() + "db volt");
+    }
+
+    //private static void
+
+    public static void Beolvasas (String fajlnev) throws IOException {
             fuvarLista = new ArrayList<>();
 
             FileReader fr = new FileReader(fajlnev);
