@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class FuvarPerformat {
     private int taxiAzonosito;
     private String indulasiIdo;
@@ -58,6 +60,11 @@ public class FuvarPerformat {
 
     public double getBevetel(){
         return this.borravalo + this.vetelDij;
+    }
+
+    public double KilometerSzamitas(){
+        double roundOff = Math.round((this.megtettTavolsag % 1000) * 100.0) / 100.0;
+        return roundOff;
     }
 
     @Override

@@ -18,6 +18,8 @@ public class Main {
             TaxisoforBevetel();
             Merfold();
             LegHosszabbFuvar();
+            BokezuBorravalo();
+            Kilometer();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -32,7 +34,7 @@ public class Main {
     }
 
     private static void UtazsokSzáma() {
-        System.out.println("1.Feladat:\n" + "Utazások száma: " +  fuvarLista.stream().count() + "db volt");
+        System.out.println("1.Feladat:\n" + "Utazások száma: " + (long) fuvarLista.size() + "db volt");
     }
 
     private static void Merfold(){
@@ -41,6 +43,15 @@ public class Main {
 
     private static void LegHosszabbFuvar(){
         System.out.println("4.Feladat: \n" + "Leghoszabb fuvar (időben) mért adatai: " + fuvarLista.stream().max(Comparator.comparing(FuvarPerformat :: getUtazasiIdo)).get());
+    }
+
+    private static void BokezuBorravalo(){
+        System.out.println("5.Feladat: \n" + "Legbőkezűbb borravaló fuvar adatai: " + fuvarLista.stream().max(Comparator.comparingDouble(FuvarPerformat::getBorravalo)).get());
+    }
+
+    private static void Kilometer(){
+
+        System.out.println("6.Feladat: \n" + "4261-es azonosítójú taxis összesen megtett útja kilométerben: " + fuvarLista.stream().filter(fuvarLista -> fuvarLista.getTaxiAzonosito() == 4261).mapToDouble(FuvarPerformat:: KilometerSzamitas).sum());
     }
 
     public static void Beolvasas (String fajlnev) throws IOException {
