@@ -7,31 +7,35 @@ import java.util.List;
 public class Main {
 
     public static List<FuvarPerformat> fuvarLista;
+
     public static void main(String[] args) {
 
         String fajlNev = "fuvar.csv";
         try {
             Beolvasas(fajlNev);
+            System.out.println("1.Feladat:\n" + "Utazások száma: " +  fuvarLista.stream().count() + "db volt");
 
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
             System.out.println();
         }
     }
 
-    public static void Beolvasas(String fajlnev) throws IOException{
-        fuvarLista = new ArrayList<>();
+        public static void Beolvasas (String fajlnev) throws IOException {
+            fuvarLista = new ArrayList<>();
 
             FileReader fr = new FileReader(fajlnev);
             BufferedReader br = new BufferedReader(fr);
             br.readLine();
             String sor = br.readLine();
-            while (sor != null){
+            while (sor != null) {
                 FuvarPerformat egy = new FuvarPerformat(sor);
                 fuvarLista.add(egy);
                 sor = br.readLine();
             }
             br.close();
             fr.close();
+        }
+
+
     }
-}

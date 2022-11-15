@@ -56,6 +56,7 @@ public class FuvarPerformat {
         return fizetesModja;
     }
 
+
     @Override
     public String toString() {
         return "FuvarPerformat: " + "taxiAzonosito= " + taxiAzonosito +
