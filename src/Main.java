@@ -51,7 +51,7 @@ public class Main {
 
     private static void Kilometer(){
 
-        System.out.println("6.Feladat: \n" + "4261-es azonosítójú taxis összesen megtett útja kilométerben: " + fuvarLista.stream().filter(fuvarLista -> fuvarLista.getTaxiAzonosito() == 4261).mapToDouble(FuvarPerformat:: KilometerSzamitas).sum());
+        System.out.println("6.Feladat: \n" + "4261-es azonosítójú taxis összesen megtett útja kilométerben: " + fuvarLista.stream().filter(fuvarLista -> fuvarLista.getTaxiAzonosito() == 4261).mapToDouble(FuvarPerformat:: KilometerSzamitas).sum() +  " km");
     }
 
     public static void Beolvasas (String fajlnev) throws IOException {

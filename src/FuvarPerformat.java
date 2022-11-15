@@ -63,8 +63,7 @@ public class FuvarPerformat {
     }
 
     public double KilometerSzamitas(){
-        double roundOff = Math.round((this.megtettTavolsag % 1000) * 100.0) / 100.0;
-        return roundOff;
+        return this.megtettTavolsag * 1.6;
     }
 
     @Override
