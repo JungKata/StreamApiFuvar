@@ -54,6 +54,11 @@ public class Main {
         System.out.println("6.Feladat: \n" + "4261-es azonosítójú taxis összesen megtett útja kilométerben: " + fuvarLista.stream().filter(fuvarLista -> fuvarLista.getTaxiAzonosito() == 4261).mapToDouble(FuvarPerformat:: KilometerSzamitas).sum() +  " km");
     }
 
+    private static void HibasAdataok(){
+        System.out.println("7.Feladat: \n" + "" + );
+    }
+
+
     public static void Beolvasas (String fajlnev) throws IOException {
             fuvarLista = new ArrayList<>();
 
