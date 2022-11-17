@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Main {
 
@@ -20,6 +22,9 @@ public class Main {
             LegHosszabbFuvar();
             BokezuBorravalo();
             Kilometer();
+            HibasAdataok();
+            SzerepelE();
+
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -55,7 +60,15 @@ public class Main {
     }
 
     private static void HibasAdataok(){
-        System.out.println("7.Feladat: \n" + "" + );
+        List<FuvarPerformat> filter = fuvarLista.stream().filter(fuvarLista -> fuvarLista.getMegtettTavolsag() == 0).collect(Collectors.toList()).stream().filter(fNull -> fNull.getVetelDij() >0.0 || fNull.getBorravalo()>0.0).collect(Collectors.toList());
+
+
+        System.out.println("7.Feladat: \n" + "Hibás sorok adatai:"+filter ) ;
+    }
+
+    private static void SzerepelE(){
+        System.out.println("8.Feladat: \n" + "Az 1452 taxi: " +
+                (fuvarLista.stream().anyMatch(fuvarLista -> fuvarLista.getTaxiAzonosito() == 1452)? "igen" : "nem"));
     }
 
 
