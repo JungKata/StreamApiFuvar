@@ -24,6 +24,7 @@ public class Main {
             Kilometer();
             HibasAdataok();
             SzerepelE();
+            LegrovidebbUtazas();
 
 
         } catch (IOException e) {
@@ -69,6 +70,10 @@ public class Main {
     private static void SzerepelE(){
         System.out.println("8.Feladat: \n" + "Az 1452 taxi: " +
                 (fuvarLista.stream().anyMatch(fuvarLista -> fuvarLista.getTaxiAzonosito() == 1452)? "igen" : "nem"));
+    }
+
+    private static void LegrovidebbUtazas(){
+        System.out.println("9.Feladat: \n" + "A 3 legrövidebb utazás: " + fuvarLista.stream().filter(fuvarLista -> fuvarLista.getUtazasiIdo() > 0).sorted(Comparator.comparingDouble(FuvarPerformat :: getUtazasiIdo)).limit(3).collect(Collectors.toList()));
     }
 
 

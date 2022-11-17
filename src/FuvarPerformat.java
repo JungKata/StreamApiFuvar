@@ -74,7 +74,7 @@ public class FuvarPerformat {
                                     ", megtettTavolsag= " + megtettTavolsag +
                                     ", vetelDij= " + vetelDij +
                                     ", borravalo= " + borravalo +
-                                    ", fizetesModja= " + fizetesModja;
+                                    ", fizetesModja= " + fizetesModja + "\n";
     }
 }
 
