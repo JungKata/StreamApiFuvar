@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1bf1fa-633a-4b21-b368-d87b068a4ce9" name="Changes" comment="8.feladat kész">
+    <list default="true" id="8c1bf1fa-633a-4b21-b368-d87b068a4ce9" name="Changes" comment="11.feladat ötletelés">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FuvarPerformat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FuvarPerformat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668687074097</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="9.feladat kész">
+      <created>1668690156632</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668690156632</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +191,8 @@
     <MESSAGE value="5.feladat kész" />
     <MESSAGE value="6.feladat kész" />
     <MESSAGE value="8.feladat kész" />
-    <option name="LAST_COMMIT_MESSAGE" value="8.feladat kész" />
+    <MESSAGE value="9.feladat kész" />
+    <MESSAGE value="11.feladat ötletelés" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.feladat ötletelés" />
   </component>
 </project>

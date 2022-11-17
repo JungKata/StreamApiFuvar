@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Main {
 
@@ -25,6 +24,8 @@ public class Main {
             HibasAdataok();
             SzerepelE();
             LegrovidebbUtazas();
+            Karacsony();
+            Szilveszter();
 
 
         } catch (IOException e) {
@@ -76,7 +77,16 @@ public class Main {
         System.out.println("9.Feladat: \n" + "A 3 legrövidebb utazás: " + fuvarLista.stream().filter(fuvarLista -> fuvarLista.getUtazasiIdo() > 0).sorted(Comparator.comparingDouble(FuvarPerformat :: getUtazasiIdo)).limit(3).collect(Collectors.toList()));
     }
 
+    private static void Karacsony(){
+        System.out.println("10.Feladat: \n" + "December 24.-i fuvarok száma: " + fuvarLista.stream().filter(fuvarLista -> fuvarLista.getIndulasiIdo().contains("2016-12-24")).count() + " db");
+    }
 
+    private static void Szilveszter(){
+        System.out.println("11.Feladat: \n" + "Borravalók aranya:" + (fuvarLista.stream().filter(fuvarLista -> fuvarLista.getIndulasiIdo().contains("2016-12-31")).collect(Collectors.toList()).stream().map(fuvarLista -> fuvarLista.getBorravalo() > 0).count() / fuvarLista.stream().filter(fuvarLista -> fuvarLista.getIndulasiIdo().contains("2016-12-31")).count()));
+        //Bárhogy próbálkoztam filterrel nem akart sikerülni de ha meg tudja mutatni rá a jó megoldást megköszönöm.
+
+
+    }
     public static void Beolvasas (String fajlnev) throws IOException {
             fuvarLista = new ArrayList<>();
 
