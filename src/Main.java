@@ -82,8 +82,11 @@ public class Main {
     }
 
     private static void Szilveszter(){
-        System.out.println("11.Feladat: \n" + "Borravalók aranya:" + (fuvarLista.stream().filter(fuvarLista -> fuvarLista.getIndulasiIdo().contains("2016-12-31")).collect(Collectors.toList()).stream().map(fuvarLista -> fuvarLista.getBorravalo() > 0).count() / fuvarLista.stream().filter(fuvarLista -> fuvarLista.getIndulasiIdo().contains("2016-12-31")).count()));
-        //Bárhogy próbálkoztam filterrel nem akart sikerülni de ha meg tudja mutatni rá a jó megoldást megköszönöm.
+        double kapottBorravalot = fuvarLista.stream().filter(fuvarLista -> fuvarLista.getIndulasiIdo().contains("2016-12-31")).collect(Collectors.toList()).stream().filter(fuvarLista -> fuvarLista.getBorravalo() > 0).collect(Collectors.toList()).size();
+        double sum = fuvarLista.stream().filter(fuvarLista -> fuvarLista.getIndulasiIdo().contains("2016-12-31")).collect(Collectors.toList()).size();
+        double szam = (kapottBorravalot/sum)*100;
+        System.out.printf("Kapott borravalo: %f, Fuvarok száma:  %f, Aranya: %f", kapottBorravalot, sum, szam);
+        System.out.println("11.Feladat: \n" + "Borravalók aranya:" + szam + " %");
 
 
     }
